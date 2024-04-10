@@ -19,7 +19,7 @@ const getWeatherData = async function () {
     loading.src = "./ZKZg.gif";
     const input = locations.value;
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=ed6369e03c1a4bf4bac84950240304&q=${input}&days=3&aqi=no&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=ed6369e03c1a4bf4bac84950240304&q=${input}&days=3&aqi=no&alerts=no`
     );
     const weatherData = await response.json();
 
